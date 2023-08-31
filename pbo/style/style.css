@@ -1,0 +1,126 @@
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url("https://i.pinimg.com/originals/71/9e/80/719e80760999b4c355a723224120eb07.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  img{
+ border-radius: 50%;
+ width: 40%;
+ display: flex;
+ margin: auto;
+  }
+
+  .logo{
+    font-size: 100px;
+    margin-left: 156px;
+    position: relative;
+  }
+  
+  .login-container {
+    background: transparent;
+    background-size: cover;
+    padding: 100px 45px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 50%;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  input {
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255); /* Use a bottom border instead of full border */
+    outline: none; /* Remove the default input outline */
+  }
+  
+  input:focus {
+    border-bottom-color: rgb(255, 255, 255); /* Change the border color on focus */
+  }
+
+  input::placeholder{
+    color: white;
+    font-size: large;
+  }
+  
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    color: gray
+  }
+  
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: rgb(158, 18, 18); /* Change the label color */
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: #9F0D7F;
+    color: #F79BD3;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease all;
+    border-radius: 50px;
+    outline: #9F0D7F;
+  }
+  
+  button:hover {
+    background-color: #241468;
+  }
+
+  /* Existing styles... */
+
+a {
+  color: #3498db; /* Change the link color to a blue shade */
+  text-decoration: none; /* Remove the default underline */
+  transition: color 0.2s ease; /* Add a smooth color transition */
+  font-size: 14px;
+}
+
+a:hover {
+  color: #e74c3c; /* Change the link color on hover to a red shade */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Rest of your styles... */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,116 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Basic styles */
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:sans-serif;
+    background-color: transparent;
+    background-image: url("https://disdukcapil.banyuasinkab.go.id/wp-content/uploads/sites/248/2022/09/tp244-bg1-02.jpg");
+  }
+  
+  header {
+    background-color: #900C3F ;
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background-size: cover;
+    background-position: center;
+    height: auto; /* Increase height for Full HD impact */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: #952323;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 48px; /* Increase font size for impact */
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 24px; /* Increase font size for readability */
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px; /* Increase padding for better touch targets */
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 20px; /* Increase font size for impact */
+  }
+  
+  .cta-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 1920px) {
+    /* Adjustments for Full HD screens */
+    
+    /* Header and navigation adjustments... */
+    
+    .hero {
+      height: 600px; /* Retain height for consistency */
+    }
+  
+    h1 {
+      font-size: 48px; /* Retain font size for consistency */
+    }
+  
+    p {
+      font-size: 24px; /* Retain font size for consistency */
+    }
+  
+    .cta-button {
+      padding: 15px 30px; /* Retain padding for consistency */
+      font-size: 20px; /* Retain font size for consistency */
+    }
+  
+    footer {
+      padding: 20px 0; /* Retain padding for consistency */
+    }
+  }
+  
