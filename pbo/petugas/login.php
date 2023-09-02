@@ -9,7 +9,7 @@ if (isset($_SESSION['id_petugas'])) {
 
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
 
     // Check if the user is a "admin"
     $admin_sql = "SELECT * FROM petugas WHERE username='$username' AND password='$password' AND level='petugas'";

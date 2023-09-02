@@ -42,7 +42,7 @@ if (isset($_SESSION['nik'])) {
       </div>
 
       <button type="submit" name="Submit">Register</button>
-      <a href="login.php">Udah Punya Akun?</a> <a href="#" style="float: right;">Lupa Password?</a>
+      <a href="login.php">Udah Punya Akun?</a>
     </form>
   </div>
   <?php
@@ -51,7 +51,7 @@ if (isset($_SESSION['nik'])) {
         $nik = intval($_POST['nik']);
         $nama = $_POST['nama'];
         $username = $_POST['username'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
         $telp = intval($_POST['telp']);
 
         // include database connection file

@@ -10,7 +10,7 @@ if (isset($_SESSION['nik'])) {
  
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
  
     $sql = "SELECT * FROM masyarakat WHERE username='$username' AND password='$password'";
     $result = mysqli_query($koneksi, $sql);
@@ -46,7 +46,7 @@ if (isset($_POST['submit'])) {
         <input type="password" placeholder="Password" name="password" required>
       </div>
       <button type="submit" name="submit">Login</button>
-      <a href="register.php">Belum Punya Akun?</a>   <a href="#" style="float: right;">Lupa Password?</a>
+      <a href="register.php">Belum Punya Akun?</a>
     </form>
   </div>
 </body>
